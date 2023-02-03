@@ -6,7 +6,8 @@
 	font-size: 20px;
 	--accent-color: #85144b;
 	--border-radius: 10px;
-	--background-accent: #DDDDDD;
+	--background-accent: #dddddd;
+	--projects-accent: #ffdc00;
 }
 main {
 	display: grid;
@@ -47,8 +48,8 @@ li > svg {
 	grid-column: 2/4;
 	display: flex;
 	align-items: center;
-	padding: 5px 15px 5px 15px; 
-
+	padding: 5px 15px 5px 15px;
+	font-weight: bold;
 }
 
 div.profilePic > img {
@@ -62,21 +63,41 @@ div.profilePic > img {
 	border-radius: var(--border-radius);
 	height: 35px;
 	min-width: 100px;
-	flex: 1; 
+	flex: 1;
 	margin-right: 2em;
 }
 
 /* nav */
 .nav {
 	grid-column: 2 / 4;
+	display: flex;
+	align-items: center;
 }
 button {
 	color: white;
 	background-color: var(--accent-color);
-	border-radius: var(--border-radius);
-	padding: 10px;
+	border-radius: 20px;
+	padding: 0.25em 1em 0.25em 1em;
+	min-width: 5em;
 	outline: none;
 	border: none;
+	margin: 0.5em;
+	flex-wrap: wrap;
+}
+
+.greetingContainer {
+	flex: 1;
+	font-weight: bold;
+}
+
+div > img {
+	border-radius: 50%;
+	max-width: 4em;
+	margin: 0.5em;
+}
+
+.greeting {
+	font-size: 0.75em;
 }
 
 /* projects */
