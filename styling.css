@@ -3,24 +3,41 @@
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	margin: 0;
 	padding: 0;
+	font-size: 20px;
+	--accent-color: #85144b; 
 }
 main {
 	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
 }
 /* Sidebar */
 .sidebar {
-	background-color: aquamarine;
+	background-color: var(--accent-color);
 	color: white;
 	grid-column: 1 / 2;
 	grid-row: 1 / 4;
 	fill: white;
 }
+[class^="item"], h2 {
+	display: flex;
+	align-items: center;
 
-.alert,
-li > img {
+} 
+
+h2 > svg {
+	width: 3em;
+}
+
+li {
+	margin: 10px 0;
+}
+
+.headerContainer > svg,
+li > svg {
 	width: 1em;
 	height: 1em;
+	padding-right: 0.5em;
+	padding-left: 1em;
 }
 
 .actions > div {
@@ -39,9 +56,11 @@ li > img {
 
 button {
 	color: white;
-	background-color: aquamarine;
+	background-color: var(--accent-color);
 	border-radius: 15px;
 	padding: 10px;
+	outline: none; 
+	border: none; 
 }
 
 /* projects */
