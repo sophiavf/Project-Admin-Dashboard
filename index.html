@@ -10,97 +10,74 @@
 	<body>
 		<main>
 			<div class="header">
-				<div class="searchIcon"></div>
-				<div class="searchBar"></div>
-				<div class="alerts"></div>
-				<div class="profilePic"></div>
-				<div class="userName"></div>
+				<div class="headerContainer">
+					<div class="searchIcon">
+						<svg><use href="icons/magnify.svg#magnify"></use></svg>
+					</div>
+					<div class="searchBar"></div>
+					<div class="alert">
+						<svg><use href="icons/bell-outline.svg#bell-outline"></use></svg>
+					</div>
+					<div class="profilePic">
+						<svg><use href="images.html#profile-pic"></use></svg>
+					</div>
+					<div class="userName"></div>
+				</div>
 			</div>
 			<div class="sidebar">
-				<div class="icon" id="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>view-dashboard</title>
-						<path
-							d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
-						/>
-					</svg>
+				<div>
+					<svg><use href="icons/view-dashboard.svg/#view-dashboard"></use></svg
+					>Dashboard
 				</div>
-				<div class="name" id="icon">Dashboard</div>
-				<div class="icon"></div>
-				<div class="name">Home</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>card-account-details</title>
-						<path
-							d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z"
-						/>
-					</svg>
-				</div>
-				<div class="name">Profile</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>message</title>
-						<path
-							d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z"
-						/>
-					</svg>
-				</div>
-				<div class="name">Messages</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>history</title>
-						<path
-							d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3"
-						/>
-					</svg>
-				</div>
-				<div class="name">History</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>note-multiple-outline</title>
-						<path
-							d="M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M7,4V18H21V11H14V4H7Z"
-						/>
-					</svg>
-				</div>
-				<div class="name">Tasks</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>account-group-outline</title>
-						<path
-							d="M12,5A3.5,3.5 0 0,0 8.5,8.5A3.5,3.5 0 0,0 12,12A3.5,3.5 0 0,0 15.5,8.5A3.5,3.5 0 0,0 12,5M12,7A1.5,1.5 0 0,1 13.5,8.5A1.5,1.5 0 0,1 12,10A1.5,1.5 0 0,1 10.5,8.5A1.5,1.5 0 0,1 12,7M5.5,8A2.5,2.5 0 0,0 3,10.5C3,11.44 3.53,12.25 4.29,12.68C4.65,12.88 5.06,13 5.5,13C5.94,13 6.35,12.88 6.71,12.68C7.08,12.47 7.39,12.17 7.62,11.81C6.89,10.86 6.5,9.7 6.5,8.5C6.5,8.41 6.5,8.31 6.5,8.22C6.2,8.08 5.86,8 5.5,8M18.5,8C18.14,8 17.8,8.08 17.5,8.22C17.5,8.31 17.5,8.41 17.5,8.5C17.5,9.7 17.11,10.86 16.38,11.81C16.5,12 16.63,12.15 16.78,12.3C16.94,12.45 17.1,12.58 17.29,12.68C17.65,12.88 18.06,13 18.5,13C18.94,13 19.35,12.88 19.71,12.68C20.47,12.25 21,11.44 21,10.5A2.5,2.5 0 0,0 18.5,8M12,14C9.66,14 5,15.17 5,17.5V19H19V17.5C19,15.17 14.34,14 12,14M4.71,14.55C2.78,14.78 0,15.76 0,17.5V19H3V17.07C3,16.06 3.69,15.22 4.71,14.55M19.29,14.55C20.31,15.22 21,16.06 21,17.07V19H24V17.5C24,15.76 21.22,14.78 19.29,14.55M12,16C13.53,16 15.24,16.5 16.23,17H7.77C8.76,16.5 10.47,16 12,16Z"
-						/>
-					</svg>
-				</div>
-				<div class="name">Communities</div>
-				<div class="icon">
-					<svg><use xlink:href="images.svg#cog-outline"></use></svg>
-				</div>
-				<div class="name">Settings</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>face-agent</title>
-						<path
-							d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z"
-						/>
-					</svg>
-				</div>
-				<div class="name">Support</div>
-				<div class="icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-						<title>shield-lock</title>
-						<path
-							d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.1 14.8,9.5V11C15.4,11 16,11.6 16,12.3V15.8C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.2C8,11.6 8.6,11 9.2,11V9.5C9.2,8.1 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,9.5V11H13.5V9.5C13.5,8.7 12.8,8.2 12,8.2Z"
-						/>
-					</svg>
-				</div>
-				<div class="name">Privacy</div>
+				<ul>
+					<li class="item1">
+						<svg><use href="icons/home.svg#home"></use></svg>Home
+					</li>
+					<li class="item2">
+						<svg>
+							<use
+								href="icons/card-account-details.svg#card-account-details"
+							></use></svg
+						>Profile
+					</li>
+					<li class="item3">
+						<svg><use xlink:href="icons/message.svg#message"></use></svg
+						>Messages
+					</li>
+					<li class="item4">
+						<svg>
+							<use href="icons/clock-time-five.svg#clock-time-five"></use>
+						</svg>
+						History
+					</li>
+					<li class="item5">
+						<svg><use href="icons/note-multiple.svg#note-multiple"></use></svg>
+						Tasks
+					</li>
+					<li class="item6">
+						<svg><use href="icons/account-group.svg#account-group"></use></svg>
+						Communities
+					</li>
+					<br />
+					<li class="item7">
+						<svg><use href="icons/cog.svg#cog"></use></svg>
+						Settings
+					</li>
+					<li class="item8">
+						<svg><use href="icons/help-box.svg#help-box"></use></svg>
+						Support
+					</li>
+					<li class="item9">
+						<svg><use href="icons/shield-lock.svg#shield-lock"></use></svg>
+						Privacy
+					</li>
+				</ul>
 			</div>
 			<div class="nav">
 				<div class="userGreeting">
 					<div class="userProfilePic"></div>
-					<div class="greeting"></div>
-					<div class="userName"></div>
+					<div class="greeting">Hi there,</div>
+					<div class="userName">Software Developer (@swDev)</div>
 				</div>
 				<div class="buttons">
 					<button class="nav1">New</button>
@@ -109,19 +86,19 @@
 				</div>
 			</div>
 			<div class="projects">
-				<div class="projectsHeading"></div>
+				<div class="projectsHeading">Your Projects</div>
 				<div class="project">
 					<div class="projectTitle"></div>
 					<div class="projectDescription"></div>
 					<div class="actions">
 						<div class="save">
-							<svg><use xlink:href="images.svg#save"></use></svg>
+							<svg><use xlink:href="images.html#save"></use></svg>
 						</div>
 						<div class="watch">
-							<svg><use xlink:href="images.svg#watch"></use></svg>
+							<svg><use href="icons/eye-plus-outline.svg"></use></svg>
 						</div>
 						<div class="share">
-							<svg><use xlink:href="images.svg#share"></use></svg>
+							<svg><use href="images.html#share"></use></svg>
 						</div>
 					</div>
 				</div>
@@ -130,13 +107,13 @@
 					<div class="projectDescription"></div>
 					<div class="actions">
 						<div class="save">
-							<svg><use xlink:href="images.svg#save"></use></svg>
+							<svg><use xlink:href="images.html#save"></use></svg>
 						</div>
 						<div class="watch">
-							<svg><use xlink:href="images.svg#watch"></use></svg>
+							<svg><use xlink:href="images.html#watch"></use></svg>
 						</div>
 						<div class="share">
-							<svg><use xlink:href="images.svg#share"></use></svg>
+							<svg><use xlink:href="images.html#share"></use></svg>
 						</div>
 					</div>
 				</div>
@@ -145,13 +122,13 @@
 					<div class="projectDescription"></div>
 					<div class="actions">
 						<div class="save">
-							<svg><use xlink:href="images.svg#save"></use></svg>
+							<svg><use xlink:href="images.html#save"></use></svg>
 						</div>
 						<div class="watch">
-							<svg><use xlink:href="images.svg#watch"></use></svg>
+							<svg><use xlink:href="images.html#watch"></use></svg>
 						</div>
 						<div class="share">
-							<svg><use xlink:href="images.svg#share"></use></svg>
+							<svg><use xlink:href="images.html#share"></use></svg>
 						</div>
 					</div>
 				</div>
@@ -160,13 +137,13 @@
 					<div class="projectDescription"></div>
 					<div class="actions">
 						<div class="save">
-							<svg><use xlink:href="images.svg#save"></use></svg>
+							<svg><use xlink:href="images.html#save"></use></svg>
 						</div>
 						<div class="watch">
-							<svg><use xlink:href="images.svg#watch"></use></svg>
+							<svg><use xlink:href="images.html#watch"></use></svg>
 						</div>
 						<div class="share">
-							<svg><use xlink:href="images.svg#share"></use></svg>
+							<svg><use xlink:href="images.html#share"></use></svg>
 						</div>
 					</div>
 				</div>
@@ -175,13 +152,13 @@
 					<div class="projectDescription"></div>
 					<div class="actions">
 						<div class="save">
-							<svg><use xlink:href="images.svg#save"></use></svg>
+							<svg><use xlink:href="images.html#save"></use></svg>
 						</div>
 						<div class="watch">
-							<svg><use xlink:href="images.svg#watch"></use></svg>
+							<svg><use xlink:href="images.html#watch"></use></svg>
 						</div>
 						<div class="share">
-							<svg><use xlink:href="images.svg#share"></use></svg>
+							<svg><use xlink:href="images.html#share"></use></svg>
 						</div>
 					</div>
 				</div>
@@ -190,13 +167,13 @@
 					<div class="projectDescription"></div>
 					<div class="actions">
 						<div class="save">
-							<svg><use xlink:href="images.svg#save"></use></svg>
+							<svg><use xlink:href="images.html#save"></use></svg>
 						</div>
 						<div class="watch">
-							<svg><use xlink:href="images.svg#watch"></use></svg>
+							<svg><use xlink:href="images.html#watch"></use></svg>
 						</div>
 						<div class="share">
-							<svg><use xlink:href="images.svg#share"></use></svg>
+							<svg><use xlink:href="images.html#share"></use></svg>
 						</div>
 					</div>
 				</div>
